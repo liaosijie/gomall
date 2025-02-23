@@ -5,7 +5,14 @@ package router
 import (
 	// order "douyin-gomall/gomall/app/hertz_gateway/biz/router/order"
 	order "github.com/PiaoAdmin/gomall/app/hertz_gateway/biz/router/order"
+	auth "github.com/PiaoAdmin/gomall/app/hertz_gateway/biz/router/auth"
+	cart "github.com/PiaoAdmin/gomall/app/hertz_gateway/biz/router/cart"
+	checkout "github.com/PiaoAdmin/gomall/app/hertz_gateway/biz/router/checkout"
+	category "github.com/PiaoAdmin/gomall/app/hertz_gateway/biz/router/category"
 	home "github.com/PiaoAdmin/gomall/app/hertz_gateway/biz/router/home"
+	user "github.com/PiaoAdmin/gomall/app/hertz_gateway/biz/router/user"
+	product "github.com/PiaoAdmin/gomall/app/hertz_gateway/biz/router/product"
+
 	"github.com/cloudwego/hertz/pkg/app/server"
 )
 
@@ -13,6 +20,16 @@ import (
 func GeneratedRegister(r *server.Hertz) {
 	//INSERT_POINT: DO NOT DELETE THIS LINE!
 	order.Register(r)
+	auth.Register(r)
+
+	user.Register(r)
+	
+	checkout.Register(r)
+
+	category.Register(r)
+
+	product.Register(r)
 
 	home.Register(r)
+	cart.Register(r)
 }

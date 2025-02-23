@@ -4,9 +4,8 @@ package cartservice
 
 import (
 	"context"
-	// cart "douyin-gomall/gomall/rpc_gen/kitex_gen/cart"
-	cart "github.com/PiaoAdmin/gomall/rpc_gen/kitex_gen/cart"
 	"errors"
+	cart "github.com/PiaoAdmin/gomall/rpc_gen/kitex_gen/cart"
 	client "github.com/cloudwego/kitex/client"
 	kitex "github.com/cloudwego/kitex/pkg/serviceinfo"
 	streaming "github.com/cloudwego/kitex/pkg/streaming"
