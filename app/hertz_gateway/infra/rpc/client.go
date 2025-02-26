@@ -100,7 +100,7 @@ func initUserClient() {
 	UserClient, err = userservice.NewClient("user", commonSuite)
 	hertz_gatewayutils.MustHandleError(err)
 }
-  
+
 func initCartClient() {
 	CartClient, err = cartservice.NewClient("cart", commonSuite)
 	hertz_gatewayutils.MustHandleError(err)

@@ -1,6 +1,6 @@
 kitex:
   service: "order"
-  address: ":8888"
+  address: ":8881"
   log_level: info
   log_file_name: "log/kitex.log"
   log_max_size: 10
@@ -9,6 +9,7 @@ kitex:
 
 registry:
   registry_address:
+<<<<<<< HEAD
 <<<<<<< HEAD
     - 127.0.0.1:8500 # 修改为 consul 的实际地址
   username: "" # consul 的用户名，如果有的话请填写
@@ -23,6 +24,9 @@ redis:
   password: "" # redis 的密码，如果有的话请填写
 =======
     - 127.0.0.1:2379
+=======
+    - 127.0.0.1:8500
+>>>>>>> d44a6b4cc7a74fbb7186470f8fe343cd7e93b530
   username: ""
   password: ""
 

@@ -4,6 +4,7 @@ import (
 	"context"
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 	"github.com/redis/go-redis/v9"
 	// "douyin-gomall/gomall/app/order/conf"
 	"github.com/PiaoAdmin/gomall/app/order/conf"
@@ -11,6 +12,10 @@ import (
 	"github.com/PiaoAdmin/gomall/app/order/conf"
 	"github.com/redis/go-redis/v9"
 >>>>>>> b6e73c27fce12b01552c5334097a847176b8f26a
+=======
+	"github.com/redis/go-redis/v9"
+	"github.com/PiaoAdmin/gomall/app/order/conf"
+>>>>>>> d44a6b4cc7a74fbb7186470f8fe343cd7e93b530
 )
 
 var (
